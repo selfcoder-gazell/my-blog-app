@@ -6,14 +6,15 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
+  provider = "postgresql"
+  url      = env("postgres://hkeeixqi:u4pRu5S6gCUD5aT6rdtISnJ2uhDM4gYo@surus.db.elephantsql.com/hkeeixqi")
 }
+//(uuid()) instead of (autoincrement())
 
 model toblog {
-  id        String  @id @default(uuid())
+  id        Int   @id @default(autoincrement())
   title     String
   content   String
   CreatedAt DateTime @default(now())
-  updatedAt DateTime @updatedAt ()
+  updatedAt DateTime @updatedAt()
 }

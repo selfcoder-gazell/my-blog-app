@@ -1,9 +1,10 @@
-import Image from 'next/image'
+//import Image from 'next/image'
 import Link from "next/link"
-import { prisma } from "../db"
+import { PrismaClient } from "@prisma/client"
+//import { prisma } from "./db"
 
 export default async function Home() {
-  const toblog = await prisma.toblog.findMany()
+  const toblog = await PrismaClient.toblog.findMany()
 
   return (
     <>
