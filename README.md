@@ -1,3 +1,7 @@
+Following this video https://www.youtube.com/watch?v=NgayZAuTgwM&t=1393s
+I decided to give it a go a created this repo. To be used for my own blog web page in the future at some point soon :-) 
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
